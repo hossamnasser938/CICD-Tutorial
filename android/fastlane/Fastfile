@@ -28,4 +28,10 @@ platform :android do
     )
   end
 
+  desc "Prepare Android Release Build"
+  lane :build_release_android do
+    gradle(
+      task: "assembleRelease",
+    )
+  end
 end

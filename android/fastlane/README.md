@@ -31,6 +31,14 @@ Runs all the tests
 
 Prepare Android Debug Build
 
+### android build_release_android
+
+```sh
+[bundle exec] fastlane android build_release_android
+```
+
+Prepare Android Release Build
+
 ----
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.
