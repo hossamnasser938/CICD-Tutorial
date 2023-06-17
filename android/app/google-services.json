@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "540584032030",
+    "project_id": "cicd-tutorial-89186",
+    "storage_bucket": "cicd-tutorial-89186.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540584032030:android:58df9896e3dcd1d57e3b0f",
+        "android_client_info": {
+          "package_name": "com.cicdproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540584032030-af25q9j4gqk2kalkt9bak96862tenr1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMWv-4VsRS92k1RmWJIpNBiFs76WBC2AI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540584032030-af25q9j4gqk2kalkt9bak96862tenr1u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
