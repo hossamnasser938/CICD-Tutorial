@@ -1,0 +1,9 @@
+git_url("https://github.com/hossamnasser938/CICD-Tutorial")
+git_branch("certs")
+storage_mode("git")
+
+type("adhoc") 
+
+app_identifier("com.mobile.tutorial.cicd")
+username("hossamnasser938@gmail.com") 
+team_name("Dicotra Tech Ltd")

@@ -20,4 +20,27 @@ platform :ios do
   lane :custom_lane do
     print "Fastlane works successfully on IOS"
   end
+
+  desc "Create app on apple developer portal and apple store connect"
+  lane :creat_app do
+    produce(
+      username: 'hossamnasser938@gmail.com',
+      app_identifier: 'com.mobile.tutorial.cicd',
+      app_name: 'CICDTutorial',
+      language: 'English',
+      app_version: '1.0',
+      sku: 'cicd_tutorial',
+      team_name: 'Dicotra Tech Ltd',
+    )
+  end
+
+  desc "Build IOS App"
+  lane :build_locally do
+    match
+    gym(
+      workspace: "CICDProject.xcworkspace",
+      configuration: "Release",
+      scheme: "CICDProject",
+    )
+  end
 end

@@ -23,6 +23,22 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 Description of what the lane does
 
+### ios creat_app
+
+```sh
+[bundle exec] fastlane ios creat_app
+```
+
+Create app on apple developer portal and apple store connect
+
+### ios build_locally
+
+```sh
+[bundle exec] fastlane ios build_locally
+```
+
+Build IOS App
+
 ----
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.
