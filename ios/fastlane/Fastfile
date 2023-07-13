@@ -34,8 +34,18 @@ platform :ios do
     )
   end
 
+  desc "register IOS devices"
+  lane :register_ios_devices do
+    register_devices(
+      devices_file: "./fastlane/devices.txt",
+      team_name: "Dicotra Tech Ltd",
+      username: 'hossamnasser938@gmail.com',
+    )
+  end
+
   desc "Build IOS App"
   lane :build_release_ios do
+    register_ios_devices
     match
     gym(
       workspace: "CICDProject.xcworkspace",

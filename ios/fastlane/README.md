@@ -31,6 +31,14 @@ Description of what the lane does
 
 Create app on apple developer portal and apple store connect
 
+### ios register_ios_devices
+
+```sh
+[bundle exec] fastlane ios register_ios_devices
+```
+
+register IOS devices
+
 ### ios build_release_ios
 
 ```sh
