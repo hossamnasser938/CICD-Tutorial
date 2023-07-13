@@ -31,13 +31,21 @@ Description of what the lane does
 
 Create app on apple developer portal and apple store connect
 
-### ios build_locally
+### ios build_release_ios
 
 ```sh
-[bundle exec] fastlane ios build_locally
+[bundle exec] fastlane ios build_release_ios
 ```
 
 Build IOS App
+
+### ios beta_ios
+
+```sh
+[bundle exec] fastlane ios beta_ios
+```
+
+Build IOS and Publish to Firebase App distribution
 
 ----
 

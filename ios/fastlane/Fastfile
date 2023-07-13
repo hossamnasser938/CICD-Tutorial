@@ -35,7 +35,7 @@ platform :ios do
   end
 
   desc "Build IOS App"
-  lane :build_locally do
+  lane :build_release_ios do
     match
     gym(
       workspace: "CICDProject.xcworkspace",
@@ -43,4 +43,15 @@ platform :ios do
       scheme: "CICDProject",
     )
   end
+
+  desc "Build IOS and Publish to Firebase App distribution"
+  lane :beta_ios do
+    build_release_ios
+    firebase_app_distribution(
+      app: "1:540584032030:ios:e9071a45d765a60a7e3b0f",
+      firebase_cli_token: "1//03sMAz0DKWYIOCgYIARAAGAMSNwF-L9Iru1xz9yjmJ_FhegGilegCS8isvQocYecnCLyQ0ssxkuUSNtNW3P8Cg4sGsN1s7T-zwDY",
+      groups: "testers"
+    )
+  end
+
 end
