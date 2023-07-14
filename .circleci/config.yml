@@ -1,23 +1,22 @@
 # .circleci/config.yml
 version: 2.1
 jobs:
-beta-android:
+  beta-android:
     docker:
       - image: circleci/android:api-30-node
     steps:
       - checkout
-      - run: yarn bet-android
+      - run: yarn beta-android
 
   beta-ios:
     macos:
       xcode: 14.0.1
     steps:
       - checkout
-      - run: yarn bet-ios
+      - run: yarn beta-ios
 
 workflows:
   beta:
     jobs:
       - beta-android
       - beta-ios
-
