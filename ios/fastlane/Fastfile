@@ -49,8 +49,10 @@ platform :ios do
 
   desc "Build IOS App"
   lane :build_release_ios do
-    register_ios_devices
-    match
+    if !is_ci
+      register_ios_devices
+    end
+    match(readonly: is_ci)
     gym(
       workspace: "CICDProject.xcworkspace",
       configuration: "Release",
